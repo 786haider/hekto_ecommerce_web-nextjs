@@ -1,3 +1,5 @@
+"use client"
+import { useState } from "react";
 import Link from "next/link";
 import { CiMail } from "react-icons/ci";
 import { FaPhoneVolume } from "react-icons/fa6";
@@ -9,6 +11,11 @@ import { TiThMenu } from "react-icons/ti";
 
 
 export default function Navbar() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
   return (
     <div className="">
       <div className=" flex bg-violet-500 " style={{ height: "20px" }}>
@@ -92,9 +99,39 @@ export default function Navbar() {
   </div>
          </div>
          <div>
-<TiThMenu className="md:hidden lg:hidden xl:hidden 2xl:hidden  flex justify-end items-end mt-4 text-3xl" />
-
-         </div>
+            <TiThMenu
+              className="md:hidden lg:hidden xl:hidden 2xl:hidden ml-52 sm:ml-44 mt-4 text-3xl cursor-pointer"
+              onClick={toggleDropdown}
+            />
+            {isDropdownOpen &&  (
+              <div
+                className="absolute right-0 mt-2 w-48 bg-[rgba(13,14,67,1)] text-white rounded shadow-lg transition-all duration-300"
+                onMouseLeave={() => setIsDropdownOpen(false)}
+              >
+                <Link href="/" className="block px-4 py-2 hover:bg-violet-600">
+                  Home
+                </Link>
+                <Link href="/" className="block px-4 py-2 hover:bg-violet-600">
+                  Pages
+                </Link>
+                <Link href="/" className="block px-4 py-2 hover:bg-violet-600">
+                  Products
+                </Link>
+                <Link href="/" className="block px-4 py-2 hover:bg-violet-600">
+                  Blog
+                </Link>
+                <Link href="/" className="block px-4 py-2 hover:bg-violet-600">
+                  Shop
+                </Link>
+                <Link href="/" className="block px-4 py-2 hover:bg-violet-600">
+                  Contact
+                </Link>
+                <Link href="/login" className="block px-4 py-2 hover:bg-violet-600">
+                  Login
+                </Link>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
