@@ -17,7 +17,7 @@ export default function Navbar() {
     setIsDropdownOpen(!isDropdownOpen);
   };
   return (
-    <div className="">
+    <div className=" h-24">
       <div className=" flex bg-violet-500 " style={{ height: "20px" }}>
         <h1 className="flex text-white sm:text-sm md:text-sm lg:text-sm xl:text-sm ml-24  ">
           <CiMail className="text-white ml-6 sm:ml-6 md:ml-60 font-bold lg:ml-8 xl:ml-10 2xl:ml-10 hidden md:block " />
@@ -66,7 +66,7 @@ export default function Navbar() {
           </Link>
         </h1>
       </div>
-      <div>
+      <div className="mt-2">
         <div className="flex">
          <h1 style={{color:'rgba(13, 14, 67, 1)',width:'98px', height:'34px', top:'3px',font:'josefin sans' ,fontWeight:'700',fontSize:'34px',lineHeight:'34px'}}
          className="flex justify-center items-center mt-2 ml-2 md:ml-32 ">
