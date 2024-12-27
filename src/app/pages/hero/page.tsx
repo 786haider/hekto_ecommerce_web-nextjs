@@ -5,7 +5,7 @@ import Image from "next/image"
 
 const HeroPage = () => {
   return (
-    <div style={{backgroundColor:'rgba(242, 240, 255, 1)',width:'1920px',height:'764px',top:'122px'}} className='flex'>
+    <div style={{backgroundColor:'rgba(242, 240, 255, 1)',height:'764px',top:'122px'}} className='flex w-auto'>
      <div>
      <Image src={bulbImag} alt="Bulb" width={387} height={387} style={{top:'122px' , left:'70px'}}/>
      </div>
@@ -27,17 +27,21 @@ const HeroPage = () => {
       Shop Now
     </button>
       </div>
-      
-       <div style={{color:'rgba(236, 210, 250, 0.35)',width:'706px',height:'689px',top:'161px',left:'1041px'}}>
-       <Image 
-       src={sofaImage}
-       alt="Sofa"
-       width={706}
-       height={689}
+      <div style={{width:'706px',height:'689px',top:'161px',left:'1041px',color:'rgba(236, 210, 250, 0.35)'}} className='hidden md:block'>
+        <Image
+        src={sofaImage}
+        alt="Sofa"
+        style={{
+          width:'629px',
+          height:'629px',
+          top:'221px',
+          left:'1051px'
 
+        }}
+        
        />
-       </div>
-      
+       
+      </div>
       </div>
   )
 }
