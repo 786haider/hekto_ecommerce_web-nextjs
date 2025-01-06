@@ -3,13 +3,16 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaSearchPlus } from "react-icons/fa";
 import ChairImg from "../../../../../public/card2Image.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Card2() {
   return (
     <div
       style={{ width: "270px", height: "361px", top: "1105px", left: "675px" }}
-      className="border rounded-md shadow-xl"
+      className="border rounded-lg shadow-xl"
     >
+      <Link href={'/'}>
+      
       <div
         style={{
           backgroundColor: "rgba(247, 247, 247, 1)",
@@ -117,6 +120,7 @@ export default function Card2() {
           $42.00
         </p>
       </div>
+      </Link>
     </div>
   );
 }

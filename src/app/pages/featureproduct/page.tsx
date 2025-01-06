@@ -1,5 +1,6 @@
 import Card1 from "./featureproductCards/card1";
 import Card2 from "./featureproductCards/card2";
+import Card3 from "./featureproductCards/card3";
 
 
 export default function FeatureProduct(){
@@ -12,6 +13,7 @@ export default function FeatureProduct(){
             <div className="flex gap-5 ml-10 mt-20">
                 <Card1/>
                <Card2/>
+               <Card3/>
                 </div> 
        
 

@@ -1,51 +1,46 @@
-import Image from "next/image";
-import chairImage from "../../../../../public/chairfeature.png";
 import Link from "next/link";
-export default function Card1() {
+import chairImage from "../../../../../public/card3Image.png";
+import Image from "next/image";
+export default function Card3() {
   return (
-    <div className="flex-col border rounded-md shadow-xl ">
-     <Link href={'/'} >
-     <div
-        style={{
-          width: "270px",
-          height: "361px",
-          top: "1105px",
-          left: "376px",
-        }}
-      >
+    <div
+      style={{ width: "270px", height: "361px", top: "1105px", left: "975px" }}
+      className="border rounded-md shadow-lg"
+    >
+      <Link href={"/"}>
         <div
           style={{
             width: "270px",
             height: "236px",
             backgroundColor: "rgba(246, 247, 251, 1)",
           }}
+          className="flex justify-center"
         >
           <Image
             src={chairImage}
-            alt="chairimage"
+            alt="Chair"
+            width={175}
+            height={175}
             style={{
-              width: "178px",
-              height: "178px",
-              top: "46px",
-              left: "40px",
+              top: "41px",
+              left: "41px",
             }}
-            className="flex justify-center items-center ml-auto mr-auto "
           />
         </div>
         <div
-          style={{ backgroundColor: "rgba(255, 255, 255, 1)", width: "270px" }}
+          style={{ width: "270px", backgroundColor: "rgba(255, 255, 255, 1)" }}
         >
           <h1
             style={{
               height: "22px",
               top: "251px",
               left: "71px",
-              color: "rgba(251, 46, 134, 1)",
               fontWeight: 700,
               lineHeight: "21px",
               fontSize: "18px",
+              color: "rgba(251, 46, 134, 1)",
             }}
-            className="flex justify-center items-center w-auto mt-3"
+            className="flex justify-center items-center w-auto  "
           >
             Cantilever chair
           </h1>
@@ -111,8 +106,7 @@ export default function Card1() {
             $42.00
           </p>
         </div>
-      </div>
-     </Link>
+      </Link>
     </div>
   );
 }
