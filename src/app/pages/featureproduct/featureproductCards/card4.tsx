@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import chairImage from "../../../../../public/card4.png";
 import Image from "next/image";
@@ -25,9 +24,8 @@ export default function Card4() {
             style={{
               top: "41px",
               left: "41px",
-              width:'216px',
-              height:'151px'
-              
+              width: "216px",
+              height: "151px",
             }}
             className="mt-auto mb-auto"
           />
