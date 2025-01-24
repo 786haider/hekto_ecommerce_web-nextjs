@@ -1,6 +1,7 @@
 import Card1 from "./featureproductCards/card1";
 import Card2 from "./featureproductCards/card2";
 import Card3 from "./featureproductCards/card3";
+import Card4 from "./featureproductCards/card4";
 
 
 export default function FeatureProduct(){
@@ -10,10 +11,11 @@ export default function FeatureProduct(){
             className="flex justify-center items-center font-extrabold font-serif w-auto mt-20">
             Featured Products
             </h1>
-            <div className="flex gap-5 ml-10 mt-20">
+            <div className="flex gap-5 ml-20 mr-auto mt-20">
                 <Card1/>
                <Card2/>
                <Card3/>
+               <Card4/>
                 </div> 
        
 
