@@ -2,6 +2,7 @@ import FeatureProduct from "./pages/featureproduct/page";
 import HeroPage from "./pages/hero/page";
 import LatestProduct from '../../src/app/pages/latestproduct/page';
 import ShopexOffer from "./pages/shopex_offer/page";
+import UniqueFeature from "./pages/uniquefeature/page";
 
 
 
@@ -12,6 +13,7 @@ export default function Home() {
    <FeatureProduct/>
    <LatestProduct/>
    <ShopexOffer/>
+   <UniqueFeature/>
    
    
     <h1>Home</h1>
