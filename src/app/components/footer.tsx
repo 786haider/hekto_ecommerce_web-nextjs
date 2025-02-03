@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer
-      className="text-gray-600 body-font"
+      className="text-gray-600 body-font mt-10"
       style={{ backgroundColor: "rgba(238, 239, 251, 1)" }}
     >
       <div className="container px-5 py-24 mx-auto">
